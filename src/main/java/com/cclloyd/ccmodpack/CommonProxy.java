@@ -40,6 +40,7 @@ public class CommonProxy {
     	
     	BlockRegistry.registerBlocks();
     	BlockRegistry.registerTileEntities();
+    	
     	Recipes.addRecipes();
     	Recipes.addSmelting();
     	

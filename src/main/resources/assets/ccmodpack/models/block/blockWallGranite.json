@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall",
+    "textures": {
+        "all": "ccmodpack:blocks/stone_granite_smooth"
+    }
+}

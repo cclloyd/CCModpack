@@ -1,0 +1,41 @@
+# Blocks
+tile.ccmodpack_blockCharcoal.name=Block of Charcoal
+tile.ccmodpack_poweredRedstoneLantern.name=Powered Redstone Lantern
+tile.ccmodpack_wirelessChest.name=Wireless Chest
+tile.ccmodpack_refinedFurnace.name=Refined Furnace
+
+
+# Slabs
+tile.ccmodpack_blockSlabGranite.name=Granite Slab
+ccmodpack_blockSlabGranite.name=Granite Slab
+tile.ccmodpack_blockSlabAndesite.name=Andesite Slab
+ccmodpack_blockSlabAndesite.name=Andesite Slab
+tile.ccmodpack_blockSlabDiorite.name=Diorite Slab
+ccmodpack_blockSlabDiorite.name=Diorite Slab
+
+
+# Stairs
+tile.ccmodpack_blockStairsGranite.name=Granite Stairs
+tile.ccmodpack_blockStairsAndesite.name=Andesite Stairs
+tile.ccmodpack_blockStairsDiorite.name=Diorite Stairs
+
+
+# Walls
+tile.ccmodpack_blockWallGranite.name=Granite Stairs
+
+
+# GUI
+container.wirelessChestEntity.name=Wireless Chest
+container.entityRefinedFurnace.name=Refined Furnace
+
+
+# Creative Tabs
+itemGroup.ccmodpack=cclloyd's Modpack
+
+
+# Tools
+item.ccmodpack_itemToolHammerDiamond.name=Diamond Hammer
+item.ccmodpack_itemToolHammerIron.name=Iron Hammer
+item.ccmodpack_itemToolHammerGold.name=Gold Hammer
+item.ccmodpack_itemToolHammerStone.name=Stone Hammer
+item.ccmodpack_itemToolHammerWood.name=Wood Hammer

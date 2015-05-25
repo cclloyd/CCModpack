@@ -1,0 +1,12 @@
+{
+	"variants": {
+		"burning_sides_count=0,facing=north": { "model": "ccmodpack:refinedFurnace"},
+		"burning_sides_count=1,facing=north": { "model": "ccmodpack:refinedFurnace_on"},
+		"burning_sides_count=0,facing=east": { "model":  "ccmodpack:refinedFurnace", "y": 90},
+		"burning_sides_count=1,facing=east": { "model":  "ccmodpack:refinedFurnace_on", "y": 90},
+		"burning_sides_count=0,facing=south": { "model": "ccmodpack:refinedFurnace", "y": 180},
+		"burning_sides_count=1,facing=south": { "model": "ccmodpack:refinedFurnace_on", "y": 180},
+		"burning_sides_count=0,facing=west": { "model":  "ccmodpack:refinedFurnace", "y": 270},
+		"burning_sides_count=1,facing=west": { "model":  "ccmodpack:refinedFurnace_on", "y": 270}
+	}
+}

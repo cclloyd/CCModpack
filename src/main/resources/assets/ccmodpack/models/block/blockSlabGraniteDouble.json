@@ -1,0 +1,11 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "down": "ccmodpack:blocks/stone_granite_smooth",
+        "up": "ccmodpack:blocks/stone_granite_smooth",
+        "east": "ccmodpack:blocks/blockSlabGranite",
+        "north": "ccmodpack:blocks/blockSlabGranite",
+        "south": "ccmodpack:blocks/blockSlabGranite",
+        "west": "ccmodpack:blocks/blockSlabGranite"
+    }
+}

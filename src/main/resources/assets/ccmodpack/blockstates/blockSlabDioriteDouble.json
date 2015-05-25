@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "variant=false": { "model": "ccmodpack:blockSlabDioriteDouble" },
+        "variant=true":    { "model": "ccmodpack:blockSlabDioriteDouble" }
+    }
+}

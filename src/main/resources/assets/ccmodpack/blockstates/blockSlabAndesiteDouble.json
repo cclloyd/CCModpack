@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "variant=false": { "model": "ccmodpack:blockSlabAndesiteDouble" },
+        "variant=true":    { "model": "ccmodpack:blockSlabAndesiteDouble" }
+    }
+}

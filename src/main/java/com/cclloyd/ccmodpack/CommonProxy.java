@@ -17,17 +17,17 @@ public class CommonProxy {
 	public static Configuration config;
     public static CreativeTabCCModpack creativeTab;
 
-	public static void preInit(FMLPreInitializationEvent event) {
+	public void preInit(FMLPreInitializationEvent event) {
 		config = new Configuration(new File(event.getModConfigurationDirectory(), "/ccmodpack.cfg"));
     	config.load();
     	
     	BlockRegistry.config(config);
-    	BlockCharcoal.config(config);
-    	if (config.hasChanged()) {
+    	if (config.hasChanged())
     		config.save();
-    	}
-    	NetworkRegistry.INSTANCE.registerGuiHandler(CCModpack.instance, GuiHandlerRegistry.getInstance());
     	
+    	
+    	NetworkRegistry.INSTANCE.registerGuiHandler(CCModpack.instance, GuiHandlerRegistry.getInstance());
+    
     	// Register GUI Handlers for all entity GUIs
 		GuiHandlerRegistry.getInstance().registerGuiHandler(new GuiHandlerWirelessChest(), GuiHandlerRegistry.GUI_WIRELESS_CHEST);
 		GuiHandlerRegistry.getInstance().registerGuiHandler(new GuiHandlerRefinedFurnace(), GuiHandlerRegistry.GUI_REFINED_FURNACE);
@@ -35,7 +35,7 @@ public class CommonProxy {
 	}
 	
 	
-	public static void init(FMLInitializationEvent event) {
+	public void init(FMLInitializationEvent event) {
 		creativeTab = new CreativeTabCCModpack("ccmodpack");
     	
     	BlockRegistry.registerBlocks();
@@ -48,7 +48,7 @@ public class CommonProxy {
 	}
 	
 	
-	public static void postInit(FMLPostInitializationEvent event) {
+	public void postInit(FMLPostInitializationEvent event) {
 		
 	}
 }

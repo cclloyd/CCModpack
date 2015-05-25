@@ -3,9 +3,11 @@ package com.cclloyd.ccmodpack;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+
 
 @Mod(modid = CCModpack.MODID, version = CCModpack.VERSION)
 public class CCModpack {
@@ -17,23 +19,22 @@ public class CCModpack {
     @Mod.Instance(CCModpack.MODID)
     public static CCModpack instance;
     
+    @SidedProxy(clientSide="com.cclloyd.ccmodpack.ClientProxy", serverSide="com.cclloyd.ccmodpack.ServerProxy")
+    public static CommonProxy proxy;
     
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-    	CommonProxy.preInit(event);
-    	ClientProxy.preInit(event);
+    	this.proxy.preInit(event);
     }
     
     
     @EventHandler
     public void init(FMLInitializationEvent event) {
-    	CommonProxy.init(event);
-    	ClientProxy.init(event);
+    	this.proxy.init(event);
     }
     
     @EventHandler
     public void postInit(FMLPostInitializationEvent event) {
-    	CommonProxy.postInit(event);
-    	ClientProxy.postInit(event);
+    	this.proxy.postInit(event);
     }
 }

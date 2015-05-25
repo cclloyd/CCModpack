@@ -1,12 +1,10 @@
 package com.cclloyd.ccmodpack;
 
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.ItemModelMesher;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-public class ClientProxy extends CommonProxy {
+public class ServerProxy extends CommonProxy {
 
 	@Override
 	public void preInit(FMLPreInitializationEvent event) {
@@ -19,8 +17,7 @@ public class ClientProxy extends CommonProxy {
 	public void init(FMLInitializationEvent event) {
 		super.init(event);
 		
-		ItemModelMesher renderItem = Minecraft.getMinecraft().getRenderItem().getItemModelMesher();
-		BlockRegistry.registerRenders(renderItem);
+		
 	}
 	
 	@Override

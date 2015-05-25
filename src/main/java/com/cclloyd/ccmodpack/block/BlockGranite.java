@@ -7,7 +7,7 @@ import net.minecraft.block.BlockStone;
 public class BlockGranite extends BlockStone {
 
 	public static final String name = "blockGranite";
-	private BlockStone block = new BlockStone();
+	//private BlockStone block = new BlockStone();
 	
 	public BlockGranite() {
 		super();

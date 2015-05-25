@@ -15,8 +15,8 @@ public class WorldSavedDataWirelessChest extends WorldSavedData {
 	//aMap.put("keystr" , 1);
 	
 	public Map<String, ItemStack[]> wirelessContents = new HashMap<String, ItemStack[]>();
-	
-	public WorldSavedDataWirelessChest(String mapName) {
+
+	public WorldSavedDataWirelessChest(String mapName, Map<String, ItemStack[]> wirelessContents) {
 		super(mapName);
 		this.wirelessContents = wirelessContents;
 	}

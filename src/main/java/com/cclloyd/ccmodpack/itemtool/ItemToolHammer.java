@@ -15,7 +15,7 @@ import net.minecraft.item.ItemTool;
 import net.minecraft.util.BlockPos;
 import net.minecraft.world.World;
 
-import com.cclloyd.ccmodpack.BlockRegistry;
+import com.cclloyd.ccmodpack.registry.BlockRegistry;
 import com.google.common.collect.Sets;
 
  /**

@@ -1,6 +1,8 @@
 {
     "variants": {
         "half=bottom,variant=false": { "model": "ccmodpack:blockSlabAndesite" },
-        "half=top,variant=false": { "model": "ccmodpack:blockSlabAndesite_top" }
+        "half=top,variant=false": { "model": "ccmodpack:blockSlabAndesite_top" },
+        "half=bottom,variant=true": { "model": "ccmodpack:blockSlabAndesite" },
+        "half=top,variant=true": { "model": "ccmodpack:blockSlabAndesite_top" }
     }
 }

@@ -5,7 +5,7 @@ import java.util.Random;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
 
-import com.cclloyd.ccmodpack.BlockRegistry;
+import com.cclloyd.ccmodpack.registry.BlockRegistry;
 
 public class BlockSlabDioriteDouble extends BlockSlabDioriteHalf {
 

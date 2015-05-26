@@ -1,5 +1,8 @@
 package com.cclloyd.ccmodpack;
 
+import com.cclloyd.ccmodpack.registry.BlockRegistry;
+import com.cclloyd.ccmodpack.registry.ItemRegistry;
+
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemModelMesher;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -21,6 +24,7 @@ public class ClientProxy extends CommonProxy {
 		
 		ItemModelMesher renderItem = Minecraft.getMinecraft().getRenderItem().getItemModelMesher();
 		BlockRegistry.registerRenders(renderItem);
+		ItemRegistry.registerRenders(renderItem);
 	}
 	
 	@Override

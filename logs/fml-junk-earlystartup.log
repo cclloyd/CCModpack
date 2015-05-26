@@ -31,3 +31,234 @@
 [16:07:23] [main/WARN] [LaunchWrapper]: Tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker has already been visited -- skipping
 [16:07:23] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
 [16:07:23] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[16:40:27] [main/INFO] [GradleStart]: userProperties: cclloyd
+[16:40:27] [main/INFO] [GradleStart]: accessToken: cclloyd
+[16:40:27] [main/INFO] [GradleStart]: version: 1.7
+[16:40:27] [main/INFO] [GradleStart]: username: cclloyd
+[16:40:27] [main/INFO] [GradleStart]: Extra: [--tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker]
+[16:40:27] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, cclloyd, --assetsDir, /Users/Michael/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken, {REDACTED}, --version, 1.7, --username, cclloyd, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[16:40:27] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[16:40:27] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[16:40:27] [main/WARN] [LaunchWrapper]: Tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker has already been visited -- skipping
+[16:40:27] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[16:40:27] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[16:42:36] [main/INFO] [GradleStart]: userProperties: cclloyd
+[16:42:36] [main/INFO] [GradleStart]: accessToken: cclloyd
+[16:42:36] [main/INFO] [GradleStart]: version: 1.7
+[16:42:36] [main/INFO] [GradleStart]: username: cclloyd
+[16:42:36] [main/INFO] [GradleStart]: Extra: [--tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker]
+[16:42:36] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, cclloyd, --assetsDir, /Users/Michael/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken, {REDACTED}, --version, 1.7, --username, cclloyd, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[16:42:36] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[16:42:36] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[16:42:36] [main/WARN] [LaunchWrapper]: Tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker has already been visited -- skipping
+[16:42:36] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[16:42:36] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:03:40] [main/INFO] [GradleStart]: userProperties: cclloyd
+[17:03:40] [main/INFO] [GradleStart]: accessToken: cclloyd
+[17:03:40] [main/INFO] [GradleStart]: version: 1.7
+[17:03:40] [main/INFO] [GradleStart]: username: cclloyd
+[17:03:40] [main/INFO] [GradleStart]: Extra: [--tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker]
+[17:03:40] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, cclloyd, --assetsDir, /Users/Michael/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken, {REDACTED}, --version, 1.7, --username, cclloyd, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[17:03:40] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:03:40] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:03:40] [main/WARN] [LaunchWrapper]: Tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker has already been visited -- skipping
+[17:03:40] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[17:03:40] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:06:00] [main/INFO] [GradleStart]: userProperties: cclloyd
+[17:06:00] [main/INFO] [GradleStart]: accessToken: cclloyd
+[17:06:00] [main/INFO] [GradleStart]: version: 1.7
+[17:06:00] [main/INFO] [GradleStart]: username: cclloyd
+[17:06:00] [main/INFO] [GradleStart]: Extra: [--tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker]
+[17:06:00] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, cclloyd, --assetsDir, /Users/Michael/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken, {REDACTED}, --version, 1.7, --username, cclloyd, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[17:06:00] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:06:00] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:06:00] [main/WARN] [LaunchWrapper]: Tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker has already been visited -- skipping
+[17:06:00] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[17:06:00] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:10:50] [main/INFO] [GradleStart]: userProperties: cclloyd
+[17:10:50] [main/INFO] [GradleStart]: accessToken: cclloyd
+[17:10:50] [main/INFO] [GradleStart]: version: 1.7
+[17:10:50] [main/INFO] [GradleStart]: username: cclloyd
+[17:10:50] [main/INFO] [GradleStart]: Extra: [--tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker]
+[17:10:50] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, cclloyd, --assetsDir, /Users/Michael/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken, {REDACTED}, --version, 1.7, --username, cclloyd, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[17:10:50] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:10:50] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:10:50] [main/WARN] [LaunchWrapper]: Tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker has already been visited -- skipping
+[17:10:50] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[17:10:50] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:12:30] [main/INFO] [GradleStart]: userProperties: cclloyd
+[17:12:30] [main/INFO] [GradleStart]: accessToken: cclloyd
+[17:12:30] [main/INFO] [GradleStart]: version: 1.7
+[17:12:30] [main/INFO] [GradleStart]: username: cclloyd
+[17:12:30] [main/INFO] [GradleStart]: Extra: [--tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker]
+[17:12:30] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, cclloyd, --assetsDir, /Users/Michael/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken, {REDACTED}, --version, 1.7, --username, cclloyd, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[17:12:30] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:12:30] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:12:30] [main/WARN] [LaunchWrapper]: Tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker has already been visited -- skipping
+[17:12:30] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[17:12:30] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:16:49] [main/INFO] [GradleStart]: userProperties: cclloyd
+[17:16:49] [main/INFO] [GradleStart]: accessToken: cclloyd
+[17:16:49] [main/INFO] [GradleStart]: version: 1.7
+[17:16:49] [main/INFO] [GradleStart]: username: cclloyd
+[17:16:49] [main/INFO] [GradleStart]: Extra: [--tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker]
+[17:16:49] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, cclloyd, --assetsDir, /Users/Michael/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken, {REDACTED}, --version, 1.7, --username, cclloyd, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[17:16:49] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:16:49] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:16:49] [main/WARN] [LaunchWrapper]: Tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker has already been visited -- skipping
+[17:16:49] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[17:16:49] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:24:20] [main/INFO] [GradleStart]: userProperties: cclloyd
+[17:24:20] [main/INFO] [GradleStart]: accessToken: cclloyd
+[17:24:20] [main/INFO] [GradleStart]: version: 1.7
+[17:24:20] [main/INFO] [GradleStart]: username: cclloyd
+[17:24:20] [main/INFO] [GradleStart]: Extra: [--tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker]
+[17:24:20] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, cclloyd, --assetsDir, /Users/Michael/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken, {REDACTED}, --version, 1.7, --username, cclloyd, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[17:24:20] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:24:20] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:24:20] [main/WARN] [LaunchWrapper]: Tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker has already been visited -- skipping
+[17:24:20] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[17:24:20] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:26:38] [main/INFO] [GradleStart]: userProperties: cclloyd
+[17:26:38] [main/INFO] [GradleStart]: accessToken: cclloyd
+[17:26:38] [main/INFO] [GradleStart]: version: 1.7
+[17:26:38] [main/INFO] [GradleStart]: username: cclloyd
+[17:26:38] [main/INFO] [GradleStart]: Extra: [--tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker]
+[17:26:38] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, cclloyd, --assetsDir, /Users/Michael/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken, {REDACTED}, --version, 1.7, --username, cclloyd, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[17:26:38] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:26:38] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:26:38] [main/WARN] [LaunchWrapper]: Tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker has already been visited -- skipping
+[17:26:38] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[17:26:38] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:30:41] [main/INFO] [GradleStart]: userProperties: cclloyd
+[17:30:41] [main/INFO] [GradleStart]: accessToken: cclloyd
+[17:30:41] [main/INFO] [GradleStart]: version: 1.7
+[17:30:41] [main/INFO] [GradleStart]: username: cclloyd
+[17:30:41] [main/INFO] [GradleStart]: Extra: [--tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker]
+[17:30:41] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, cclloyd, --assetsDir, /Users/Michael/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken, {REDACTED}, --version, 1.7, --username, cclloyd, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[17:30:41] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:30:41] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[17:30:41] [main/WARN] [LaunchWrapper]: Tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker has already been visited -- skipping
+[17:30:41] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[17:30:41] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:04:48] [main/INFO] [GradleStart]: userProperties: cclloyd
+[18:04:48] [main/INFO] [GradleStart]: accessToken: cclloyd
+[18:04:48] [main/INFO] [GradleStart]: version: 1.7
+[18:04:48] [main/INFO] [GradleStart]: username: cclloyd
+[18:04:48] [main/INFO] [GradleStart]: Extra: [--tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker]
+[18:04:48] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, cclloyd, --assetsDir, /Users/Michael/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken, {REDACTED}, --version, 1.7, --username, cclloyd, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[18:04:48] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:04:48] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:04:48] [main/WARN] [LaunchWrapper]: Tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker has already been visited -- skipping
+[18:04:48] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[18:04:48] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:07:36] [main/INFO] [GradleStart]: userProperties: cclloyd
+[18:07:36] [main/INFO] [GradleStart]: accessToken: cclloyd
+[18:07:36] [main/INFO] [GradleStart]: version: 1.7
+[18:07:36] [main/INFO] [GradleStart]: username: cclloyd
+[18:07:36] [main/INFO] [GradleStart]: Extra: [--tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker]
+[18:07:37] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, cclloyd, --assetsDir, /Users/Michael/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken, {REDACTED}, --version, 1.7, --username, cclloyd, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[18:07:37] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:07:37] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:07:37] [main/WARN] [LaunchWrapper]: Tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker has already been visited -- skipping
+[18:07:37] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[18:07:37] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:08:19] [main/INFO] [GradleStart]: userProperties: cclloyd
+[18:08:19] [main/INFO] [GradleStart]: accessToken: cclloyd
+[18:08:19] [main/INFO] [GradleStart]: version: 1.7
+[18:08:19] [main/INFO] [GradleStart]: username: cclloyd
+[18:08:19] [main/INFO] [GradleStart]: Extra: [--tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker]
+[18:08:19] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, cclloyd, --assetsDir, /Users/Michael/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken, {REDACTED}, --version, 1.7, --username, cclloyd, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[18:08:19] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:08:19] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:08:19] [main/WARN] [LaunchWrapper]: Tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker has already been visited -- skipping
+[18:08:19] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[18:08:19] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:10:33] [main/INFO] [GradleStart]: userProperties: cclloyd
+[18:10:33] [main/INFO] [GradleStart]: accessToken: cclloyd
+[18:10:33] [main/INFO] [GradleStart]: version: 1.7
+[18:10:33] [main/INFO] [GradleStart]: username: cclloyd
+[18:10:33] [main/INFO] [GradleStart]: Extra: [--tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker]
+[18:10:33] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, cclloyd, --assetsDir, /Users/Michael/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken, {REDACTED}, --version, 1.7, --username, cclloyd, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[18:10:33] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:10:33] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:10:33] [main/WARN] [LaunchWrapper]: Tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker has already been visited -- skipping
+[18:10:33] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[18:10:33] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:20:42] [main/INFO] [GradleStart]: userProperties: cclloyd
+[18:20:42] [main/INFO] [GradleStart]: accessToken: cclloyd
+[18:20:42] [main/INFO] [GradleStart]: version: 1.7
+[18:20:42] [main/INFO] [GradleStart]: username: cclloyd
+[18:20:42] [main/INFO] [GradleStart]: Extra: [--tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker]
+[18:20:42] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, cclloyd, --assetsDir, /Users/Michael/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken, {REDACTED}, --version, 1.7, --username, cclloyd, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[18:20:42] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:20:42] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:20:42] [main/WARN] [LaunchWrapper]: Tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker has already been visited -- skipping
+[18:20:42] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[18:20:42] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:27:59] [main/INFO] [GradleStart]: userProperties: cclloyd
+[18:27:59] [main/INFO] [GradleStart]: accessToken: cclloyd
+[18:27:59] [main/INFO] [GradleStart]: version: 1.7
+[18:27:59] [main/INFO] [GradleStart]: username: cclloyd
+[18:27:59] [main/INFO] [GradleStart]: Extra: [--tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker]
+[18:27:59] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, cclloyd, --assetsDir, /Users/Michael/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken, {REDACTED}, --version, 1.7, --username, cclloyd, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[18:27:59] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:27:59] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:27:59] [main/WARN] [LaunchWrapper]: Tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker has already been visited -- skipping
+[18:27:59] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[18:27:59] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:30:38] [main/INFO] [GradleStart]: userProperties: cclloyd
+[18:30:38] [main/INFO] [GradleStart]: accessToken: cclloyd
+[18:30:38] [main/INFO] [GradleStart]: version: 1.7
+[18:30:38] [main/INFO] [GradleStart]: username: cclloyd
+[18:30:38] [main/INFO] [GradleStart]: Extra: [--tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker]
+[18:30:38] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, cclloyd, --assetsDir, /Users/Michael/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken, {REDACTED}, --version, 1.7, --username, cclloyd, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[18:30:38] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:30:38] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:30:38] [main/WARN] [LaunchWrapper]: Tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker has already been visited -- skipping
+[18:30:38] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[18:30:38] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[03:36:15] [main/INFO] [GradleStart]: userProperties: cclloyd
+[03:36:15] [main/INFO] [GradleStart]: accessToken: cclloyd
+[03:36:15] [main/INFO] [GradleStart]: version: 1.7
+[03:36:15] [main/INFO] [GradleStart]: username: cclloyd
+[03:36:15] [main/INFO] [GradleStart]: Extra: [--tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker]
+[03:36:15] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, cclloyd, --assetsDir, /Users/Michael/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken, {REDACTED}, --version, 1.7, --username, cclloyd, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[03:36:15] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[03:36:15] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[03:36:15] [main/WARN] [LaunchWrapper]: Tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker has already been visited -- skipping
+[03:36:15] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[03:36:15] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[03:46:06] [main/INFO] [GradleStart]: userProperties: cclloyd
+[03:46:06] [main/INFO] [GradleStart]: accessToken: cclloyd
+[03:46:06] [main/INFO] [GradleStart]: version: 1.7
+[03:46:06] [main/INFO] [GradleStart]: username: cclloyd
+[03:46:06] [main/INFO] [GradleStart]: Extra: [--tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker]
+[03:46:06] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, cclloyd, --assetsDir, /Users/Michael/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken, {REDACTED}, --version, 1.7, --username, cclloyd, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[03:46:06] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[03:46:06] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[03:46:06] [main/WARN] [LaunchWrapper]: Tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker has already been visited -- skipping
+[03:46:06] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[03:46:06] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[03:49:44] [main/INFO] [GradleStart]: userProperties: cclloyd
+[03:49:44] [main/INFO] [GradleStart]: accessToken: cclloyd
+[03:49:44] [main/INFO] [GradleStart]: version: 1.7
+[03:49:44] [main/INFO] [GradleStart]: username: cclloyd
+[03:49:44] [main/INFO] [GradleStart]: Extra: [--tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker]
+[03:49:44] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, cclloyd, --assetsDir, /Users/Michael/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken, {REDACTED}, --version, 1.7, --username, cclloyd, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[03:49:44] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[03:49:44] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[03:49:44] [main/WARN] [LaunchWrapper]: Tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker has already been visited -- skipping
+[03:49:44] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[03:49:44] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[03:50:15] [main/INFO] [GradleStart]: userProperties: cclloyd
+[03:50:15] [main/INFO] [GradleStart]: accessToken: cclloyd
+[03:50:15] [main/INFO] [GradleStart]: version: 1.7
+[03:50:15] [main/INFO] [GradleStart]: username: cclloyd
+[03:50:15] [main/INFO] [GradleStart]: Extra: [--tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker]
+[03:50:15] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, cclloyd, --assetsDir, /Users/Michael/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken, {REDACTED}, --version, 1.7, --username, cclloyd, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[03:50:15] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[03:50:15] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[03:50:15] [main/WARN] [LaunchWrapper]: Tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker has already been visited -- skipping
+[03:50:15] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[03:50:15] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker

@@ -8,9 +8,11 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 
-import com.cclloyd.ccmodpack.block.BlockCharcoal;
 import com.cclloyd.ccmodpack.guihandler.GuiHandlerRefinedFurnace;
 import com.cclloyd.ccmodpack.guihandler.GuiHandlerWirelessChest;
+import com.cclloyd.ccmodpack.registry.BlockRegistry;
+import com.cclloyd.ccmodpack.registry.ItemRegistry;
+import com.cclloyd.ccmodpack.registry.Recipes;
 
 public class CommonProxy {
 	
@@ -22,6 +24,7 @@ public class CommonProxy {
     	config.load();
     	
     	BlockRegistry.config(config);
+    	ItemRegistry.config(config);
     	if (config.hasChanged())
     		config.save();
     	
@@ -44,7 +47,7 @@ public class CommonProxy {
     	Recipes.addRecipes();
     	Recipes.addSmelting();
     	
-    	BlockRegistry.registerTools();
+    	ItemRegistry.registerTools();
     	
 	}
 	

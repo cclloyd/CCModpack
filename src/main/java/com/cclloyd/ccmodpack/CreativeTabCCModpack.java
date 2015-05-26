@@ -1,5 +1,7 @@
 package com.cclloyd.ccmodpack;
 
+import com.cclloyd.ccmodpack.registry.BlockRegistry;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.relauncher.Side;

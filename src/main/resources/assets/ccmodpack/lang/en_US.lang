@@ -21,7 +21,8 @@ tile.ccmodpack_blockStairsDiorite.name=Diorite Stairs
 
 
 # Walls
-tile.ccmodpack_blockWallGranite.name=Granite Stairs
+tile.ccmodpack_blockWallGranite.name=Granite Wall
+ccmodpack_blockWallGranite.name=Granite Wall
 
 
 # GUI

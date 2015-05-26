@@ -11,11 +11,13 @@ public class BlockWallGranite extends BlockWall {
 	
 	public BlockWallGranite() {
 		super(Blocks.stone);
+		
 	}
+	
 	
 	@Override
 	public String getUnlocalizedName() {
 		return CCModpack.MODID + "_" + name;
 	}
-
+	
 }

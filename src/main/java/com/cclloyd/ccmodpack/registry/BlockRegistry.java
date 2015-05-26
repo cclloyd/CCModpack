@@ -1,11 +1,9 @@
-package com.cclloyd.ccmodpack;
+package com.cclloyd.ccmodpack.registry;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.ItemModelMesher;
-import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import com.cclloyd.ccmodpack.block.BlockCharcoal;
@@ -26,22 +24,14 @@ import com.cclloyd.ccmodpack.block.BlockWirelessChest;
 import com.cclloyd.ccmodpack.block.ItemBlockSlabAndesite;
 import com.cclloyd.ccmodpack.block.ItemBlockSlabDiorite;
 import com.cclloyd.ccmodpack.block.ItemBlockSlabGranite;
-import com.cclloyd.ccmodpack.itemtool.ItemToolHammer;
-import com.cclloyd.ccmodpack.itemtool.ItemToolHammerDiamond;
-import com.cclloyd.ccmodpack.itemtool.ItemToolHammerGold;
-import com.cclloyd.ccmodpack.itemtool.ItemToolHammerIron;
-import com.cclloyd.ccmodpack.itemtool.ItemToolHammerStone;
-import com.cclloyd.ccmodpack.itemtool.ItemToolHammerWood;
 import com.cclloyd.ccmodpack.tileentity.EntityRefinedFurnace;
 import com.cclloyd.ccmodpack.tileentity.EntityWirelessChest;
 
 
-public class BlockRegistry {
-	
-	public static boolean loadEntities;
-	
+public class BlockRegistry extends CommonRegistry {
+		
 	// Initialize Blocks
-	public static Block charcoalBlock = new BlockCharcoal();
+	public static Block blockCharcoal = new BlockCharcoal();
 	public static Block poweredRedstoneLantern = new BlockPoweredRedstoneLantern();
 	public static Block blockDust;
 	public static Block blockGranite = new BlockGranite();
@@ -63,18 +53,9 @@ public class BlockRegistry {
 	public static Block blockWallGranite = new BlockWallGranite();
 	
 	// Initialize Blocks as Items
-	public static Item charcoalBlockItem = Item.getItemFromBlock(charcoalBlock);
+	public static Item blockCharcoalItem = Item.getItemFromBlock(blockCharcoal);
 	public static Item poweredRedstoneLanternItem = Item.getItemFromBlock(poweredRedstoneLantern);
 	public static Item itemDust = Item.getItemFromBlock(blockDust);
-
-	// Initialize Items
-	public static ItemToolHammer itemToolHammerDiamond = new ItemToolHammerDiamond();
-	public static ItemToolHammer itemToolHammerIron = new ItemToolHammerIron();
-	public static ItemToolHammer itemToolHammerGold = new ItemToolHammerGold();
-	public static ItemToolHammer itemToolHammerStone = new ItemToolHammerStone();
-	public static ItemToolHammer itemToolHammerWood = new ItemToolHammerWood();
-
-	;
 	
 	// Initialize Tile Entities
 	public static TileEntity wirelessChestEntity = new EntityWirelessChest();
@@ -89,7 +70,7 @@ public class BlockRegistry {
 	
 	public static void registerBlocks() {	
 		// Register Blocks
-		GameRegistry.registerBlock(charcoalBlock, BlockCharcoal.name);
+		GameRegistry.registerBlock(blockCharcoal, BlockCharcoal.name);
 		GameRegistry.registerBlock(poweredRedstoneLantern, BlockPoweredRedstoneLantern.name);
 		
 		// Register Slabs
@@ -105,7 +86,7 @@ public class BlockRegistry {
 									blockSlabDiorite, blockSlabDioriteDouble, false);
 		GameRegistry.registerBlock(blockSlabDioriteDouble, ItemBlockSlabDiorite.class, BlockSlabDioriteDouble.name, 
 									blockSlabDiorite, blockSlabDioriteDouble, true);
-		
+
 		// Register Stairs
 		GameRegistry.registerBlock(blockStairsGranite, BlockStairsGranite.name);
 		GameRegistry.registerBlock(blockStairsAndesite, BlockStairsAndesite.name);
@@ -127,20 +108,10 @@ public class BlockRegistry {
 	}
 	
 	
-	public static void registerTools() {
-		GameRegistry.registerItem(itemToolHammerDiamond, ItemToolHammerDiamond.name);
-		GameRegistry.registerItem(itemToolHammerIron, ItemToolHammerIron.name);
-		GameRegistry.registerItem(itemToolHammerGold, ItemToolHammerGold.name);
-		GameRegistry.registerItem(itemToolHammerStone, ItemToolHammerStone.name);
-		GameRegistry.registerItem(itemToolHammerWood, ItemToolHammerWood.name);
-	}
-		
-	
-	
 	
 	public static void registerRenders(ItemModelMesher renderItem) {
 		// Register block renders
-		addRender(renderItem, charcoalBlock, BlockCharcoal.name);
+		addRender(renderItem, blockCharcoal, BlockCharcoal.name);
 		addRender(renderItem, poweredRedstoneLantern, BlockPoweredRedstoneLantern.name);
 		addRender(renderItem, wirelessChest, BlockWirelessChest.name);
 		addRender(renderItem, refinedFurnace, BlockRefinedFurnace.name);
@@ -150,28 +121,7 @@ public class BlockRegistry {
 		addRender(renderItem, blockStairsGranite, BlockStairsGranite.name);
 		addRender(renderItem, blockStairsAndesite, BlockStairsAndesite.name);
 		addRender(renderItem, blockStairsDiorite, BlockStairsDiorite.name);
-		
-		addRender(renderItem, itemToolHammerDiamond, ItemToolHammerDiamond.name);
-		addRender(renderItem, itemToolHammerIron, ItemToolHammerIron.name);
-		addRender(renderItem, itemToolHammerGold, ItemToolHammerGold.name);
-		addRender(renderItem, itemToolHammerStone, ItemToolHammerStone.name);
-		addRender(renderItem, itemToolHammerWood, ItemToolHammerWood.name);
 	      
 	}
-	
-	private static void addRender(ItemModelMesher renderItem, Block renderBlock, String blockname) {
-		addRender(renderItem, Item.getItemFromBlock(renderBlock), blockname);
-	}
-	
-	private static void addRender(ItemModelMesher renderItem, Item item, String itemName) {
-		renderItem.register(item, 0, new ModelResourceLocation(CCModpack.MODID + ":" + itemName, "inventory"));
-	}
-
-
-	public static void config(Configuration config) {
-		loadEntities = config.get("registry entities", "entities", true).getBoolean(true);
-	}
-		
-	
 	
 }

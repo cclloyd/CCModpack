@@ -2,7 +2,7 @@ package com.cclloyd.ccmodpack.block;
 
 import java.util.Random;
 
-import com.cclloyd.ccmodpack.BlockRegistry;
+import com.cclloyd.ccmodpack.registry.BlockRegistry;
 
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;

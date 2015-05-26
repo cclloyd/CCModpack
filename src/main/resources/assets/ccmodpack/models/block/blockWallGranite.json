@@ -1,6 +1,6 @@
 {
-    "parent": "block/wall",
+    "parent": "block/wall_inventory",
     "textures": {
-        "all": "ccmodpack:blocks/stone_granite_smooth"
+        "wall": "ccmodpack:blocks/stone_granite_smooth"
     }
 }

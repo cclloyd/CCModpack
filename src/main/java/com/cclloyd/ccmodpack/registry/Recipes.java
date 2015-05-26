@@ -1,6 +1,4 @@
-package com.cclloyd.ccmodpack;
-
-import com.cclloyd.ccmodpack.block.BlockCharcoal;
+package com.cclloyd.ccmodpack.registry;
 
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
@@ -14,7 +12,7 @@ public class Recipes {
 	public static void addRecipes() {
 		
 		// Initialize Blocks
-	 	Block charcoalBlock = BlockRegistry.charcoalBlock;
+	 	Block charcoalBlock = BlockRegistry.blockCharcoal;
 	    Block poweredRedstoneLantern = BlockRegistry.poweredRedstoneLantern;
     	Block refinedFurnace = BlockRegistry.refinedFurnace;
     	
@@ -50,7 +48,7 @@ public class Recipes {
         );
         
         // Diamond Hammer
-        GameRegistry.addRecipe(new ItemStack(BlockRegistry.itemToolHammerDiamond, 1),
+        GameRegistry.addRecipe(new ItemStack(ItemRegistry.itemToolHammerDiamond, 1),
         		" D ",
         		" SD",
         		"S  ",
@@ -119,11 +117,7 @@ public class Recipes {
 	}
 	
 	public static void addSmelting() {
-		
-		// Initialize Blocks
-	 	Block charcoalBlock = new BlockCharcoal();
-	 	
 		// Register Smelting
-        GameRegistry.registerFuelHandler((IFuelHandler) charcoalBlock);
+        GameRegistry.registerFuelHandler((IFuelHandler)BlockRegistry.blockCharcoal);
 	}
 }

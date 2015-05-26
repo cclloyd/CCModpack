@@ -1,37 +1,37 @@
-[16:07:25] [Client thread/INFO]: Setting user: cclloyd
-[16:07:27] [Client thread/INFO]: LWJGL Version: 2.9.2
-[16:07:29] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:cclloy's Modpack
-[16:07:29] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[16:07:29] [Thread-7/INFO]: Initializing LWJGL OpenAL
-[16:07:29] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[16:07:29] [Thread-7/INFO]: OpenAL initialized.
-[16:07:30] [Sound Library Loader/INFO]: Sound engine started
-[16:07:31] [Client thread/INFO]: Created: 512x512 textures-atlas
-[16:07:31] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:cclloy's Modpack
-[16:07:31] [Client thread/INFO]: SoundSystem shutting down...
-[16:07:32] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[16:07:32] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[16:07:32] [Thread-9/INFO]: Initializing LWJGL OpenAL
-[16:07:32] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[16:07:32] [Thread-9/INFO]: OpenAL initialized.
-[16:07:32] [Sound Library Loader/INFO]: Sound engine started
-[16:07:33] [Client thread/INFO]: Created: 512x512 textures-atlas
-[16:07:36] [Server thread/INFO]: Starting integrated minecraft server version 1.8
-[16:07:36] [Server thread/INFO]: Generating keypair
-[16:07:37] [Server thread/INFO]: Preparing start region for level 0
-[16:07:37] [Server thread/INFO]: Changing view distance to 16, from 10
-[16:07:38] [Server thread/INFO]: cclloyd[local:E:17c354d3] logged in with entity id 27 at (-8.047864537181837, 70.0, -1.7118853460364474)
-[16:07:38] [Server thread/INFO]: cclloyd joined the game
-[16:08:17] [Server thread/INFO]: Saving and pausing game...
-[16:08:17] [Server thread/INFO]: Saving chunks for level 'Test World Superflat (70 tall)'/Overworld
-[16:08:17] [Server thread/INFO]: Saving chunks for level 'Test World Superflat (70 tall)'/Nether
-[16:08:17] [Server thread/INFO]: Saving chunks for level 'Test World Superflat (70 tall)'/The End
-[16:08:18] [Server thread/INFO]: Stopping server
-[16:08:18] [Server thread/INFO]: Saving players
-[16:08:18] [Server thread/INFO]: Saving worlds
-[16:08:18] [Server thread/INFO]: Saving chunks for level 'Test World Superflat (70 tall)'/Overworld
-[16:08:18] [Server thread/INFO]: Saving chunks for level 'Test World Superflat (70 tall)'/Nether
-[16:08:18] [Server thread/INFO]: Saving chunks for level 'Test World Superflat (70 tall)'/The End
-[16:08:19] [Client thread/INFO]: Stopping!
-[16:08:19] [Client thread/INFO]: SoundSystem shutting down...
-[16:08:19] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[03:50:17] [Client thread/INFO]: Setting user: cclloyd
+[03:50:19] [Client thread/INFO]: LWJGL Version: 2.9.2
+[03:50:21] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:cclloy's Modpack
+[03:50:21] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[03:50:21] [Thread-7/INFO]: Initializing LWJGL OpenAL
+[03:50:21] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[03:50:21] [Thread-7/INFO]: OpenAL initialized.
+[03:50:22] [Sound Library Loader/INFO]: Sound engine started
+[03:50:23] [Client thread/INFO]: Created: 512x512 textures-atlas
+[03:50:23] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:cclloy's Modpack
+[03:50:23] [Client thread/INFO]: SoundSystem shutting down...
+[03:50:24] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[03:50:24] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[03:50:24] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[03:50:24] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[03:50:24] [Thread-9/INFO]: OpenAL initialized.
+[03:50:24] [Sound Library Loader/INFO]: Sound engine started
+[03:50:25] [Client thread/INFO]: Created: 512x512 textures-atlas
+[03:50:53] [Server thread/INFO]: Starting integrated minecraft server version 1.8
+[03:50:53] [Server thread/INFO]: Generating keypair
+[03:50:55] [Server thread/INFO]: Preparing start region for level 0
+[03:50:56] [Server thread/INFO]: Changing view distance to 16, from 10
+[03:50:56] [Server thread/INFO]: cclloyd[local:E:5278eb0c] logged in with entity id 26 at (-10.919338585920181, 70.0, 2.179888447273484)
+[03:50:56] [Server thread/INFO]: cclloyd joined the game
+[03:51:14] [Server thread/INFO]: Saving and pausing game...
+[03:51:14] [Server thread/INFO]: Saving chunks for level 'Test World Superflat (70 tall)'/Overworld
+[03:51:14] [Server thread/INFO]: Saving chunks for level 'Test World Superflat (70 tall)'/Nether
+[03:51:14] [Server thread/INFO]: Saving chunks for level 'Test World Superflat (70 tall)'/The End
+[03:51:15] [Server thread/INFO]: Stopping server
+[03:51:15] [Server thread/INFO]: Saving players
+[03:51:15] [Server thread/INFO]: Saving worlds
+[03:51:15] [Server thread/INFO]: Saving chunks for level 'Test World Superflat (70 tall)'/Overworld
+[03:51:15] [Server thread/INFO]: Saving chunks for level 'Test World Superflat (70 tall)'/Nether
+[03:51:15] [Server thread/INFO]: Saving chunks for level 'Test World Superflat (70 tall)'/The End
+[03:52:33] [Client thread/INFO]: Stopping!
+[03:52:33] [Client thread/INFO]: SoundSystem shutting down...
+[03:52:33] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

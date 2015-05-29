@@ -1,4 +1,4 @@
-package com.cclloyd.ccmodpack.itemtool;
+package com.cclloyd.ccmodpack.item;
 
 import com.cclloyd.ccmodpack.CCModpack;
 

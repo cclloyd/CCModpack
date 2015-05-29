@@ -1,7 +1,5 @@
 package com.cclloyd.ccmodpack;
 
-import java.io.File;
-
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -19,7 +17,13 @@ public class CommonProxy {
 	public static Configuration config;
     public static CreativeTabCCModpack creativeTab;
 
+    
+    //private FMLControlledNamespacedRegistry<Item> iItemRegistry;
+    //private Method addObjectRaw;
+    
+    
 	public void preInit(FMLPreInitializationEvent event) {
+		/*
 		config = new Configuration(new File(event.getModConfigurationDirectory(), "/ccmodpack.cfg"));
     	config.load();
     	
@@ -27,8 +31,25 @@ public class CommonProxy {
     	ItemRegistry.config(config);
     	if (config.hasChanged())
     		config.save();
-    	
-    	
+    	*/
+    	/*
+    	try {
+    	    Method getMain = GameData.class.getDeclaredMethod("getMain");
+    	    getMain.setAccessible(true);
+    	    GameData gameData = (GameData) getMain.invoke(null);
+
+    	    Field f = GameData.class.getDeclaredField("iItemRegistry");
+    	    f.setAccessible(true);
+    	    iItemRegistry = (FMLControlledNamespacedRegistry<Item>) f.get(gameData);
+
+    	    addObjectRaw = FMLControlledNamespacedRegistry.class.getDeclaredMethod("addObjectRaw", Integer.TYPE, Object.class, Object.class);
+    	    addObjectRaw.setAccessible(true);
+
+    	} catch (Exception e) {
+    	    // TODO Auto-generated catch block
+    	    e.printStackTrace();
+    	}
+    	*/
     	NetworkRegistry.INSTANCE.registerGuiHandler(CCModpack.instance, GuiHandlerRegistry.getInstance());
     
     	// Register GUI Handlers for all entity GUIs

@@ -30,7 +30,7 @@ public class BlockRefinedFurnace extends BlockContainer {
 
 	public static final String name = "refinedFurnace";
     //public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
-    public static final PropertyInteger BURNING_SIDES_COUNT = PropertyInteger.create("burning_sides_count", 0, 1);
+    public static final PropertyInteger BURNING_SIDES_COUNT = PropertyInteger.create("burning_sides_count", 0, 4);
     public static final PropertyDirection PROPERTYFACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
     
 	// change the furnace emitted light ("block light") depending on how many slots are burning

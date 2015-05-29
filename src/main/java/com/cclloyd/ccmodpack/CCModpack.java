@@ -1,6 +1,5 @@
 package com.cclloyd.ccmodpack;
 
-import net.minecraft.client.Minecraft;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -14,7 +13,7 @@ public class CCModpack {
 	
     public static final String MODID = "ccmodpack";
     public static final String VERSION = "0.2";
-	public static final String MCDIR = Minecraft.getMinecraft().mcDataDir.getAbsolutePath().substring(0, Minecraft.getMinecraft().mcDataDir.getAbsolutePath().length()-1);
+	//public static final String MCDIR = Minecraft.getMinecraft().mcDataDir.getAbsolutePath().substring(0, Minecraft.getMinecraft().mcDataDir.getAbsolutePath().length()-1);
 	
     @Mod.Instance(CCModpack.MODID)
     public static CCModpack instance;

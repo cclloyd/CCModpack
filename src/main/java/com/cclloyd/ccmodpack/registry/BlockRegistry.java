@@ -1,13 +1,12 @@
 package com.cclloyd.ccmodpack.registry;
 
 import net.minecraft.block.Block;
-import net.minecraft.client.renderer.ItemModelMesher;
 import net.minecraft.item.Item;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
+import com.cclloyd.ccmodpack.block.BlockBorderlessGlass;
 import com.cclloyd.ccmodpack.block.BlockCharcoal;
-import com.cclloyd.ccmodpack.block.BlockGranite;
 import com.cclloyd.ccmodpack.block.BlockPoweredRedstoneLantern;
 import com.cclloyd.ccmodpack.block.BlockRefinedFurnace;
 import com.cclloyd.ccmodpack.block.BlockSlabAndesiteDouble;
@@ -32,9 +31,9 @@ public class BlockRegistry extends CommonRegistry {
 		
 	// Initialize Blocks
 	public static Block blockCharcoal = new BlockCharcoal();
-	public static Block poweredRedstoneLantern = new BlockPoweredRedstoneLantern();
+	public static Block blockPoweredRedstoneLantern = new BlockPoweredRedstoneLantern();
 	public static Block blockDust;
-	public static Block blockGranite = new BlockGranite();
+	public static Block blockBorderlessGlass = new BlockBorderlessGlass();
 	
 	// Slabs
 	public static Block blockSlabGranite = new BlockSlabGraniteHalf();
@@ -54,7 +53,7 @@ public class BlockRegistry extends CommonRegistry {
 	
 	// Initialize Blocks as Items
 	public static Item blockCharcoalItem = Item.getItemFromBlock(blockCharcoal);
-	public static Item poweredRedstoneLanternItem = Item.getItemFromBlock(poweredRedstoneLantern);
+	public static Item blockPoweredRedstoneLanternItem = Item.getItemFromBlock(blockPoweredRedstoneLantern);
 	public static Item itemDust = Item.getItemFromBlock(blockDust);
 	
 	// Initialize Tile Entities
@@ -71,7 +70,8 @@ public class BlockRegistry extends CommonRegistry {
 	public static void registerBlocks() {	
 		// Register Blocks
 		GameRegistry.registerBlock(blockCharcoal, BlockCharcoal.name);
-		GameRegistry.registerBlock(poweredRedstoneLantern, BlockPoweredRedstoneLantern.name);
+		GameRegistry.registerBlock(blockPoweredRedstoneLantern, BlockPoweredRedstoneLantern.name);
+		//GameRegistry.registerBlock(blockBorderlessGlass, BlockBorderlessGlass.name);
 		
 		// Register Slabs
 		GameRegistry.registerBlock(blockSlabGranite, ItemBlockSlabGranite.class, BlockSlabGraniteHalf.name, 
@@ -86,7 +86,7 @@ public class BlockRegistry extends CommonRegistry {
 									blockSlabDiorite, blockSlabDioriteDouble, false);
 		GameRegistry.registerBlock(blockSlabDioriteDouble, ItemBlockSlabDiorite.class, BlockSlabDioriteDouble.name, 
 									blockSlabDiorite, blockSlabDioriteDouble, true);
-
+		
 		// Register Stairs
 		GameRegistry.registerBlock(blockStairsGranite, BlockStairsGranite.name);
 		GameRegistry.registerBlock(blockStairsAndesite, BlockStairsAndesite.name);
@@ -94,6 +94,17 @@ public class BlockRegistry extends CommonRegistry {
 		
 		// Register Walls
 		//GameRegistry.registerBlock(blockWallGranite, BlockWallGranite.name);
+		
+		/*
+		try {
+			GameRegistry.addSubstitutionAlias("minecraft:glass", GameRegistry.Type.BLOCK, blockBorderlessGlass);
+			GameRegistry.addSubstitutionAlias("minecraft:glass", GameRegistry.Type.ITEM, Item.getItemFromBlock(blockBorderlessGlass));
+			//GameRegistry.addSubstitutionAlias("minecraft:glass", GameRegistry.Type.ITEM, new ItemMultiTexture(blockBorderlessGlass, mySand, new String[] { "default", "red", "my" }).setUnlocalizedName("sand"));
+			//GameRegistry.addSubstitutionAlias("minecraft:sand", GameRegistry.Type.ITEM, new ItemMultiTexture(mySand, mySand, new String[] { "default", "red", "my" }).setUnlocalizedName("sand"));
+
+		} catch (ExistingSubstitutionException e) {
+			e.printStackTrace();
+		}*/
 	}
 	
 	
@@ -109,18 +120,18 @@ public class BlockRegistry extends CommonRegistry {
 	
 	
 	
-	public static void registerRenders(ItemModelMesher renderItem) {
+	public static void registerRenders() {
 		// Register block renders
-		addRender(renderItem, blockCharcoal, BlockCharcoal.name);
-		addRender(renderItem, poweredRedstoneLantern, BlockPoweredRedstoneLantern.name);
-		addRender(renderItem, wirelessChest, BlockWirelessChest.name);
-		addRender(renderItem, refinedFurnace, BlockRefinedFurnace.name);
-		addRender(renderItem, blockSlabGranite, BlockSlabGraniteHalf.name);
-		addRender(renderItem, blockSlabDiorite, BlockSlabDioriteHalf.name);
-		addRender(renderItem, blockSlabAndesite, BlockSlabAndesiteHalf.name);
-		addRender(renderItem, blockStairsGranite, BlockStairsGranite.name);
-		addRender(renderItem, blockStairsAndesite, BlockStairsAndesite.name);
-		addRender(renderItem, blockStairsDiorite, BlockStairsDiorite.name);
+		addRender(blockCharcoal, BlockCharcoal.name);
+		addRender(blockPoweredRedstoneLantern, BlockPoweredRedstoneLantern.name);
+		addRender(wirelessChest, BlockWirelessChest.name);
+		addRender(refinedFurnace, BlockRefinedFurnace.name);
+		addRender(blockSlabGranite, BlockSlabGraniteHalf.name);
+		addRender(blockSlabDiorite, BlockSlabDioriteHalf.name);
+		addRender(blockSlabAndesite, BlockSlabAndesiteHalf.name);
+		addRender(blockStairsGranite, BlockStairsGranite.name);
+		addRender(blockStairsAndesite, BlockStairsAndesite.name);
+		addRender(blockStairsDiorite, BlockStairsDiorite.name);
 	      
 	}
 	

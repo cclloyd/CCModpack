@@ -1,4 +1,4 @@
-package com.cclloyd.ccmodpack.itemtool;
+package com.cclloyd.ccmodpack.item;
 
 import java.util.Set;
 

@@ -13,7 +13,7 @@ public class Recipes {
 		
 		// Initialize Blocks
 	 	Block charcoalBlock = BlockRegistry.blockCharcoal;
-	    Block poweredRedstoneLantern = BlockRegistry.poweredRedstoneLantern;
+	    Block blockPoweredRedstoneLantern = BlockRegistry.blockPoweredRedstoneLantern;
     	Block refinedFurnace = BlockRegistry.refinedFurnace;
     	
     	// Initialize ItemStacks
@@ -23,7 +23,7 @@ public class Recipes {
         ItemStack charcoalStack9 = new ItemStack(Items.coal, 9, 1);
         ItemStack redstoneLanternStack = new ItemStack(Blocks.redstone_lamp, 1, 0);
         ItemStack redstoneTorchStack = new ItemStack(Blocks.redstone_torch, 1);
-        ItemStack poweredRedstoneLanternStack = new ItemStack(poweredRedstoneLantern, 1);
+        ItemStack blockPoweredRedstoneLanternStack = new ItemStack(blockPoweredRedstoneLantern, 1);
         ItemStack charcoalBlockStack = new ItemStack(charcoalBlock, 1);
         ItemStack furnaceStack = new ItemStack(Blocks.furnace, 1);
         ItemStack ironIngotStack = new ItemStack(Items.iron_ingot, 1);
@@ -32,7 +32,7 @@ public class Recipes {
         // Register Shapeless Recipes
         GameRegistry.addShapelessRecipe(packedIceStack, iceStack, iceStack, iceStack, iceStack);
         GameRegistry.addShapelessRecipe(charcoalBlockStack, charcoalStack, charcoalStack, charcoalStack, charcoalStack, charcoalStack, charcoalStack, charcoalStack, charcoalStack, charcoalStack);
-        GameRegistry.addShapelessRecipe(poweredRedstoneLanternStack, redstoneTorchStack, redstoneLanternStack);
+        GameRegistry.addShapelessRecipe(blockPoweredRedstoneLanternStack, redstoneTorchStack, redstoneLanternStack);
         GameRegistry.addShapelessRecipe(charcoalStack9, charcoalBlockStack);
         
         
@@ -46,14 +46,14 @@ public class Recipes {
         		" I ",
         		'I', ironIngotStack, 'F', furnaceStack
         );
-        
+        /*
         // Diamond Hammer
         GameRegistry.addRecipe(new ItemStack(ItemRegistry.itemToolHammerDiamond, 1),
         		" D ",
         		" SD",
         		"S  ",
         		'D', new ItemStack(Items.diamond, 1), 'S', new ItemStack(Items.stick, 1)
-        );
+        );*/
         
         
         GameRegistry.addRecipe(new ItemStack(BlockRegistry.blockStairsGranite, 4),

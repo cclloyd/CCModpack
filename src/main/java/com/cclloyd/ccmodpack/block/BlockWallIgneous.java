@@ -2,7 +2,6 @@ package com.cclloyd.ccmodpack.block;
 
 import java.util.List;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockWall;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyEnum;

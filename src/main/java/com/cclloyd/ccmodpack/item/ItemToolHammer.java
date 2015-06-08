@@ -4,6 +4,7 @@ import java.util.Set;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
@@ -15,17 +16,12 @@ import net.minecraft.item.ItemTool;
 import net.minecraft.util.BlockPos;
 import net.minecraft.world.World;
 
-import com.cclloyd.ccmodpack.registry.BlockRegistry;
+import com.cclloyd.ccmodpack.CCModpack;
+import com.cclloyd.ccmodpack.registry.*;
+import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Sets;
 
  /**
- * ItemToolsTest is a simple tool used to test the interactions between tools and blocks
- * For background information see here
- * http://greyminecraftcoder.blogspot.ch/2015/01/mining-blocks-with-tools.html
- *
- * Manipulating the item properties or methods is generally the best way to customise mining behaviour if you are creating
- * your own custom item.
- *
  * Item.setHarvestLevel(ToolClass, level) - first choice - give your tool one or more ToolClasses equivalent to existing tool eg "pickaxe", "axe".
    ItemTool constructor -
      EFFECTIVE_ON set of blocks - to add extra "special case" blocks that your item is effective on which don't match the Item's ToolClass(es).
@@ -34,40 +30,114 @@ import com.google.common.collect.Sets;
    Item.getDigSpeed() - metadata / damage sensitive version of getStrVsBlock()
    Item.onBlockStartBreak() - can be used to abort block breaking before it is destroyed
    Item.onBlockDestroyed() - used to damage the item once the block is destroyed
-
-   In Adventure mode, the "CanDestroy" NBT tag in the tool's itemstack is used to determine which blocks it can destroy.
  */
 
 public class ItemToolHammer extends ItemTool {
 	
 	public static final String name = "itemToolHammer";
+	public static final String name_diamond = "itemToolHammerDiamond";
+	public static final String name_gold = "itemToolHammerGold";
+	public static final String name_iron = "itemToolHammerIron";
+	public static final String name_stone = "itemToolHammerStone";
+	public static final String name_wood = "itemToolHammerWood";
+	public static final String name_obsidian = "itemToolHammerObsidian";
+	public static final String name_obsidian_reinforced = "itemToolHammerObsidianReinforced";
 	
-	static float attackDamage;// = 3.0F;
-	static ToolMaterial material;// = Item.ToolMaterial.EMERALD;
-	
-	@SuppressWarnings("rawtypes")
-	static Set effectiveBlocks = Sets.newHashSet(new Block[] {Blocks.stone, Blocks.sand, Blocks.cobblestone, Blocks.brick_block});
+	/** The attack damage of the tool */
+	public float attackDamage;
+	/** The material of the tool */
+	public ToolMaterial material;
+	/** The set of blocks the tool is effective on */
+	public static Set<Block> effectiveBlocks = Sets.newHashSet(new Block[] {Blocks.stone, Blocks.sand, Blocks.cobblestone, Blocks.brick_block});
 	  
-	public ItemToolHammer(float attackDamage, ToolMaterial material) { 
+	/**
+	 * Constructor for hammer
+	 * @param attackDamage The attack damage multiplier
+	 * @param material The tool material
+	 */
+	public ItemToolHammer(float attackDamage, ToolMaterial material) {
 		super(attackDamage, material, effectiveBlocks);
-		//setUnlocalizedName(CCModpack.MODID + "_" +  name);
-		final int WOOD_HARDNESS_LEVEL = 0;
-		final int STONE_HARDNESS_LEVEL = 1;
-		this.setHarvestLevel("axe", WOOD_HARDNESS_LEVEL);  // default.  can also be set when creating the block instance, which is typically what vanilla does
-		this.setHarvestLevel("pickaxe", STONE_HARDNESS_LEVEL);  // can add hardness level for as many or few ToolClasses as you want; new ToolClasses also possible
-  }
+		setName(material);
+		setHarvestLevel(material);
+	}
+	
+	@Override
+	public Set<String> getToolClasses(ItemStack stack) {
+	    return ImmutableSet.of("pickaxe", "spade", "axe");
+	}
+	
+	private void setHarvestLevel(ToolMaterial material) {
+		int harvestLevel;
+		
+		if (material == ToolMaterial.EMERALD)
+			harvestLevel = 3;
+		else if (material == ToolMaterial.GOLD)
+			harvestLevel = 0;
+		else if (material == ToolMaterial.IRON)
+			harvestLevel = 2;
+		else if (material == ToolMaterial.STONE)
+			harvestLevel = 1;
+		else if (material == ToolMaterial.WOOD)
+			harvestLevel = 0;
+		else if (material == ItemRegistry.toolObsidian)
+			harvestLevel = 2;
+		else if (material == ItemRegistry.toolObsidianReinforced)
+			harvestLevel = 3;
+		else
+			harvestLevel = 0;
+		
+		
+		this.setHarvestLevel("pickaxe", harvestLevel);
+		this.setHarvestLevel("axe", harvestLevel);
+		this.setHarvestLevel("spade", harvestLevel);
+	}
+	
+	/**
+	 * Used to set the unlocalized name based on the material fed to the constructor
+	 * @param material
+	 */
+	private void setName(ToolMaterial material) {
+		if (material == ToolMaterial.EMERALD)
+			setUnlocalizedName(CCModpack.MODID + "_" +  name_diamond);
+		else if (material == ToolMaterial.GOLD)
+			setUnlocalizedName(CCModpack.MODID + "_" +  name_gold);
+		else if (material == ToolMaterial.IRON)
+			setUnlocalizedName(CCModpack.MODID + "_" +  name_iron);
+		else if (material == ToolMaterial.STONE)
+			setUnlocalizedName(CCModpack.MODID + "_" +  name_stone);
+		else if (material == ToolMaterial.WOOD)
+			setUnlocalizedName(CCModpack.MODID + "_" +  name_wood);
+		else if (material == ItemRegistry.toolObsidian)
+			setUnlocalizedName(CCModpack.MODID + "_" +  name_obsidian);
+		else if (material == ItemRegistry.toolObsidianReinforced)
+			setUnlocalizedName(CCModpack.MODID + "_" +  name_obsidian_reinforced);
+		else
+			setUnlocalizedName(CCModpack.MODID + "_" +  name);			
+	}
+	
+	public String getName() {
+		return getUnlocalizedName();
+	}
+	
+	/**
+	 * Used to put tool in default tab and custom modpack tab
+	 */
+	@Override
+	public CreativeTabs[] getCreativeTabs() {
+		return CConstants.tabTools;
+	}
 
-  @Override
-  public float getStrVsBlock(ItemStack stack, Block block) {
-    Float result = super.getStrVsBlock(stack, block);
-    return result;
-  }
-
-  @Override
-  public float getDigSpeed(ItemStack stack, IBlockState state) {
-    Float result = super.getDigSpeed(stack, state);
-    return result;
-  }
+	@Override
+	public float getStrVsBlock(ItemStack stack, Block block) {
+		Float result = super.getStrVsBlock(stack, block);
+		return result;
+	}
+	
+	@Override
+	public float getDigSpeed(ItemStack stack, IBlockState state) {
+	    Float result = super.getDigSpeed(stack, state);
+	    return result;
+	}
 
   	@Override
   	public boolean onBlockStartBreak(ItemStack itemstack, BlockPos pos, EntityPlayer player) {

@@ -2,6 +2,7 @@ package com.cclloyd.ccmodpack.item;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemPickaxe;
@@ -10,6 +11,7 @@ import net.minecraft.util.BlockPos;
 import net.minecraft.world.World;
 
 import com.cclloyd.ccmodpack.CCModpack;
+import com.cclloyd.ccmodpack.registry.CConstants;
 import com.cclloyd.ccmodpack.registry.ItemRegistry;
 
 public class ItemToolPickaxeObsidianReinforced extends ItemPickaxe {
@@ -17,7 +19,7 @@ public class ItemToolPickaxeObsidianReinforced extends ItemPickaxe {
 	public static final String name = "itemToolPickaxeObsidianReinforced";	
 
 	public ItemToolPickaxeObsidianReinforced() { 
-		super(ItemRegistry.obsidian_reinforced);
+		super(ItemRegistry.toolObsidianReinforced);
 		setUnlocalizedName(CCModpack.MODID + "_" +  name);
   }
 
@@ -32,6 +34,11 @@ public class ItemToolPickaxeObsidianReinforced extends ItemPickaxe {
     Float result = super.getDigSpeed(stack, state);
     return result;
   }
+  
+  @Override
+	public CreativeTabs[] getCreativeTabs() {
+		return CConstants.tabTools;
+	}
 
   	@Override
   	public boolean onBlockStartBreak(ItemStack itemstack, BlockPos pos, EntityPlayer player) {

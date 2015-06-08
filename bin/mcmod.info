@@ -1,0 +1,16 @@
+[
+{
+  "modid": "ccmodpack",
+  "name": "cclloyd's Modpack",
+  "description": "A collection of various small mods by cclloyd.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "cclloyd.com",
+  "updateUrl": "",
+  "authorList": ["cclloyd"],
+  "credits": "cclloyd, and the FML team.  Shoutout to Minecraft By Example for a lot of help.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

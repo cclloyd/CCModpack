@@ -1,7 +1,7 @@
 package com.cclloyd.ccmodpack.block;
 
 import net.minecraft.block.BlockObsidian;
-import net.minecraftforge.common.ForgeHooks;
+import net.minecraft.init.Blocks;
 
 import com.cclloyd.ccmodpack.CCModpack;
 
@@ -11,6 +11,11 @@ public class BlockTemperedObsidian extends BlockObsidian {
 	
 	public BlockTemperedObsidian() {
 		super();
+		setUnlocalizedName(CCModpack.MODID + "_" + name);
+		setResistance(6000);
+		setHarvestLevel("pickaxe", 3);
+		setHardness(50);
+		setStepSound(Blocks.obsidian.stepSound);
 	}
 	
 	@Override

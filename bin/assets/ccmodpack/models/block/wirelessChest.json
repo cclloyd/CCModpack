@@ -1,0 +1,6 @@
+{
+	"parent": "block/cube_all",
+	"textures": {
+		"all": "ccmodpack:entities/wirelessChest_closed_front"
+	}
+}

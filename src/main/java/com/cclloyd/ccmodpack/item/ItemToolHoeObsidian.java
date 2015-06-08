@@ -2,6 +2,7 @@ package com.cclloyd.ccmodpack.item;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemHoe;
@@ -10,6 +11,7 @@ import net.minecraft.util.BlockPos;
 import net.minecraft.world.World;
 
 import com.cclloyd.ccmodpack.CCModpack;
+import com.cclloyd.ccmodpack.registry.CConstants;
 import com.cclloyd.ccmodpack.registry.ItemRegistry;
 
 public class ItemToolHoeObsidian extends ItemHoe {
@@ -17,7 +19,7 @@ public class ItemToolHoeObsidian extends ItemHoe {
 	public static final String name = "itemToolHoeObsidian";
 			  
 	public ItemToolHoeObsidian() { 
-		super(ItemRegistry.obsidian);
+		super(ItemRegistry.toolObsidian);
 		setUnlocalizedName(CCModpack.MODID + "_" +  name);
   }
 
@@ -32,6 +34,11 @@ public class ItemToolHoeObsidian extends ItemHoe {
     Float result = super.getDigSpeed(stack, state);
     return result;
   }
+  
+  @Override
+	public CreativeTabs[] getCreativeTabs() {
+		return CConstants.tabTools;
+	}
 
   	@Override
   	public boolean onBlockStartBreak(ItemStack itemstack, BlockPos pos, EntityPlayer player) {

@@ -2,6 +2,7 @@ package com.cclloyd.ccmodpack.item;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemAxe;
@@ -10,6 +11,7 @@ import net.minecraft.util.BlockPos;
 import net.minecraft.world.World;
 
 import com.cclloyd.ccmodpack.CCModpack;
+import com.cclloyd.ccmodpack.registry.CConstants;
 import com.cclloyd.ccmodpack.registry.ItemRegistry;
 
 public class ItemToolAxeObsidianReinforced extends ItemAxe {
@@ -17,7 +19,7 @@ public class ItemToolAxeObsidianReinforced extends ItemAxe {
 	public static final String name = "itemToolAxeObsidianReinforced";	
 	  
 	public ItemToolAxeObsidianReinforced() { 
-		super(ItemRegistry.obsidian_reinforced);
+		super(ItemRegistry.toolObsidianReinforced);
 		setUnlocalizedName(CCModpack.MODID + "_" +  name);
   }
 
@@ -44,6 +46,11 @@ public class ItemToolAxeObsidianReinforced extends ItemAxe {
 	public boolean onBlockDestroyed(ItemStack stack, World worldIn, Block blockIn, BlockPos pos, EntityLivingBase playerIn) {
 		
 		return super.onBlockDestroyed(stack, worldIn, blockIn, pos, playerIn);
+	}
+	
+	@Override
+	public CreativeTabs[] getCreativeTabs() {
+		return CConstants.tabTools;
 	}
 	
 //  @Override

@@ -1,0 +1,8 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top":   "ccmodpack:blocks/blockRefinedFurnace_top",
+        "front": "ccmodpack:blocks/blockRefinedFurnace_front_off",
+        "side":  "ccmodpack:blocks/blockRefinedFurnace_side"
+    }
+}

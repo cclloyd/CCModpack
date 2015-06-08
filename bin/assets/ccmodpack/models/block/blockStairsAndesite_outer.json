@@ -1,0 +1,8 @@
+{
+    "parent": "block/outer_stairs",
+    "textures": {
+        "bottom": "ccmodpack:blocks/stone_andesite_smooth",
+        "top": "ccmodpack:blocks/stone_andesite_smooth",
+        "side": "ccmodpack:blocks/stone_andesite_smooth"
+    }
+}

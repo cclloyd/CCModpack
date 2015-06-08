@@ -1,0 +1,7 @@
+{
+    "parent": "block/pane_ns",
+    "textures": {
+        "edge": "ccmodpack:blocks/blockCleanGlass",
+        "pane": "ccmodpack:blocks/blockCleanGlass"
+    }
+}

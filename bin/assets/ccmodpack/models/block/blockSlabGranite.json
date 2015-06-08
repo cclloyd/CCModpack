@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "ccmodpack:blocks/stone_granite_smooth",
+        "top": "ccmodpack:blocks/stone_granite_smooth",
+        "side": "ccmodpack:blocks/blockSlabGranite"
+    }
+}

@@ -16,7 +16,6 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.BlockPos;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumWorldBlockLayer;
-import net.minecraft.util.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
@@ -28,40 +27,41 @@ import com.cclloyd.ccmodpack.tileentity.EntityRefinedFurnace;
 
 public class BlockRefinedFurnace extends BlockContainer {
 
-	public static final String name = "refinedFurnace";
-    //public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
-    public static final PropertyInteger BURNING_SIDES_COUNT = PropertyInteger.create("burning_sides_count", 0, 4);
+	public static final String name = "blockRefinedFurnace";
+	
+    //public static final PropertyBool PROPERTYBURNING = PropertyBool.create("burning");
+    public static final PropertyInteger PROPERTYBURNING = PropertyInteger.create("burning", 0, 2);	
+    //public static final PropertyBool PROPERTYLAVA = PropertyBool.create("lava");
     public static final PropertyDirection PROPERTYFACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
-    
-	// change the furnace emitted light ("block light") depending on how many slots are burning
-	private static final int ONE_SIDE_LIGHT_VALUE = 15;  // light value for a single side burning
-	private static final int FOUR_SIDE_LIGHT_VALUE = ONE_SIDE_LIGHT_VALUE; // light value for four sides burning
-
-	
-	public int getLightValue(IBlockAccess world, BlockPos pos) {
-		int lightValue = 0;
-		IBlockState blockState = getActualState(getDefaultState(), world, pos);
-		int burningSides = (Integer)blockState.getValue(BURNING_SIDES_COUNT);
-
-   	if (burningSides == 0) {
-			lightValue = 0;
-		} else {
-			lightValue = 15;
-			// linearly interpolate the light value depending on how many slots are burning
-			//lightValue = ONE_SIDE_LIGHT_VALUE + (int)((FOUR_SIDE_LIGHT_VALUE - ONE_SIDE_LIGHT_VALUE) / (1.0 - 1.0) * burningSides);
-			//lightValue = ONE_SIDE_LIGHT_VALUE + (int)((FOUR_SIDE_LIGHT_VALUE - ONE_SIDE_LIGHT_VALUE) / (1.0 - 1.0) * burningSides);
-		}
-		lightValue = MathHelper.clamp_int(lightValue, 0, FOUR_SIDE_LIGHT_VALUE);
-		return lightValue;
-	}
-	
+	/** is the furnace currently lit */
+    private boolean burning = false;
+	private int burnLevel = 0;
 	
 	public BlockRefinedFurnace() {
 		super(Material.rock);
 		setUnlocalizedName(CCModpack.MODID + "_" +  name);
-        //this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
+        this.setDefaultState(this.blockState.getBaseState().withProperty(PROPERTYBURNING, 0).withProperty(PROPERTYFACING, EnumFacing.NORTH));
 		setCreativeTab(CreativeTabs.tabDecorations);
 	}
+	
+	
+	public int getLightValue(IBlockAccess world, BlockPos pos) {
+		this.burning = false;
+		IBlockState blockState = getActualState(getDefaultState(), world, pos);
+		if ((Integer)blockState.getValue(PROPERTYBURNING) > 0)
+			burning = true;
+		
+		return burning ? 15 : 0;
+	}
+	
+	public int getBurnLevel(EntityRefinedFurnace entity) {
+		boolean isBurning = entity.isBurning();
+		boolean isBurningLava = entity.hasLava();
+		burnLevel = isBurning ? 1 : 0;
+		burnLevel = isBurningLava ? 2 : burnLevel;
+		return burnLevel;
+	}
+	
 	
 	@Override
 	public TileEntity createNewTileEntity(World worldIn, int meta) {
@@ -93,13 +93,6 @@ public class BlockRefinedFurnace extends BlockContainer {
 		super.breakBlock(worldIn, pos, state);
 	}
 
-	//------------------------------------------------------------
-	// we will give our Block a property which tracks the number of burning sides, 0 - 4.
-	// This will affect the appearance of the block model, but does not need to be stored in metadata (it's stored in
-	//  the tileEntity) so we only need to implement getActualState.  getStateFromMeta, getMetaFromState aren't required
-	//   but we give defaults anyway because the base class getMetaFromState gives an error if we don't
-
-	// update the block state depending on the number of slots which contain burning fuel
 	@Override
 	public IBlockState getActualState(IBlockState state, IBlockAccess worldIn, BlockPos pos)
 	{
@@ -107,49 +100,44 @@ public class BlockRefinedFurnace extends BlockContainer {
 		
 		TileEntity tileEntity = worldIn.getTileEntity(pos);
 		if (tileEntity instanceof EntityRefinedFurnace) {
-			EntityRefinedFurnace EntityRefinedFurnace = (EntityRefinedFurnace)tileEntity;
-			int burningSlots = EntityRefinedFurnace.numberOfBurningFuelSlots();
-			burningSlots = MathHelper.clamp_int(burningSlots, 0, 1);
-			return getDefaultState().withProperty(BURNING_SIDES_COUNT, burningSlots).withProperty(PROPERTYFACING, facing);
+			EntityRefinedFurnace entityRefinedFurnace = (EntityRefinedFurnace)tileEntity;
+			burnLevel = getBurnLevel(entityRefinedFurnace);
+			return getDefaultState().withProperty(PROPERTYBURNING, burnLevel).withProperty(PROPERTYFACING, facing);
 		}
 		return state;
 	}
 	
 	@Override
 	public IBlockState onBlockPlaced(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer) {
-        
-		int burningSlots = 0;
-		
+        		
 		TileEntity tileEntity = worldIn.getTileEntity(pos);
 		if (tileEntity instanceof EntityRefinedFurnace) {
-			EntityRefinedFurnace EntityRefinedFurnace = (EntityRefinedFurnace)tileEntity;
-			burningSlots = EntityRefinedFurnace.numberOfBurningFuelSlots();
-			burningSlots = MathHelper.clamp_int(burningSlots, 0, 1);
+			EntityRefinedFurnace entityRefinedFurnace = (EntityRefinedFurnace)tileEntity;
+			burnLevel = getBurnLevel(entityRefinedFurnace);
 		}
 		
-		return this.getDefaultState().withProperty(BURNING_SIDES_COUNT, burningSlots).withProperty(PROPERTYFACING, placer.getHorizontalFacing().getOpposite());
+		return this.getDefaultState().withProperty(PROPERTYBURNING, burnLevel).withProperty(PROPERTYFACING, placer.getHorizontalFacing().getOpposite());
     }
 
 	@Override
 	public IBlockState getStateFromMeta(int meta) {
 		
 		EnumFacing facing = EnumFacing.getHorizontal(meta);
-	    return this.getDefaultState().withProperty(BURNING_SIDES_COUNT, Integer.valueOf(meta)).withProperty(PROPERTYFACING, facing);
+	    return this.getDefaultState().withProperty(PROPERTYBURNING, burnLevel).withProperty(PROPERTYFACING, facing);
 	}
 
 	@Override
 	public int getMetaFromState(IBlockState state) {
 		
 		EnumFacing facing = (EnumFacing)state.getValue(PROPERTYFACING);
-	    int facingbits = facing.getHorizontalIndex();
-	    return facingbits;
+	    return facing.getHorizontalIndex();
 	}
 
 	// necessary to define which properties your blocks use
 	// will also affect the variants listed in the blockstates model file.
 	@Override
 	protected BlockState createBlockState() {
-		return new BlockState(this, new IProperty[] {BURNING_SIDES_COUNT, PROPERTYFACING});
+		return new BlockState(this, new IProperty[] {PROPERTYBURNING, PROPERTYFACING});
 	}
 
 
@@ -169,7 +157,6 @@ public class BlockRefinedFurnace extends BlockContainer {
 		return true;
 	}
 
-	// render using a BakedModel
 	@Override
 	public int getRenderType() {
 		return 3;

@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "variant=false": { "model": "ccmodpack:blockSlabGraniteDouble" },
+        "variant=true":    { "model": "ccmodpack:blockSlabGraniteDouble" }
+    }
+}

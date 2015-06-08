@@ -5,24 +5,7 @@ import net.minecraft.item.Item;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-import com.cclloyd.ccmodpack.block.BlockBorderlessGlass;
-import com.cclloyd.ccmodpack.block.BlockCharcoal;
-import com.cclloyd.ccmodpack.block.BlockPoweredRedstoneLantern;
-import com.cclloyd.ccmodpack.block.BlockRefinedFurnace;
-import com.cclloyd.ccmodpack.block.BlockSlabAndesiteDouble;
-import com.cclloyd.ccmodpack.block.BlockSlabAndesiteHalf;
-import com.cclloyd.ccmodpack.block.BlockSlabDioriteDouble;
-import com.cclloyd.ccmodpack.block.BlockSlabDioriteHalf;
-import com.cclloyd.ccmodpack.block.BlockSlabGraniteDouble;
-import com.cclloyd.ccmodpack.block.BlockSlabGraniteHalf;
-import com.cclloyd.ccmodpack.block.BlockStairsAndesite;
-import com.cclloyd.ccmodpack.block.BlockStairsDiorite;
-import com.cclloyd.ccmodpack.block.BlockStairsGranite;
-import com.cclloyd.ccmodpack.block.BlockWallGranite;
-import com.cclloyd.ccmodpack.block.BlockWirelessChest;
-import com.cclloyd.ccmodpack.block.ItemBlockSlabAndesite;
-import com.cclloyd.ccmodpack.block.ItemBlockSlabDiorite;
-import com.cclloyd.ccmodpack.block.ItemBlockSlabGranite;
+import com.cclloyd.ccmodpack.block.*;
 import com.cclloyd.ccmodpack.tileentity.EntityRefinedFurnace;
 import com.cclloyd.ccmodpack.tileentity.EntityWirelessChest;
 
@@ -33,7 +16,11 @@ public class BlockRegistry extends CommonRegistry {
 	public static Block blockCharcoal = new BlockCharcoal();
 	public static Block blockPoweredRedstoneLantern = new BlockPoweredRedstoneLantern();
 	public static Block blockDust;
-	public static Block blockBorderlessGlass = new BlockBorderlessGlass();
+	public static Block cleanGlass = new BlockCleanGlass(false);
+	public static Block cleanGlassPane = new BlockCleanGlassPane(false);
+	public static Block cleanGlassTempered = new BlockCleanGlass(true);
+	public static Block cleanGlassPaneTempered = new BlockCleanGlassPane(true);
+	public static Block temperedObsidian = new BlockTemperedObsidian();
 	
 	// Slabs
 	public static Block blockSlabGranite = new BlockSlabGraniteHalf();
@@ -71,7 +58,11 @@ public class BlockRegistry extends CommonRegistry {
 		// Register Blocks
 		GameRegistry.registerBlock(blockCharcoal, BlockCharcoal.name);
 		GameRegistry.registerBlock(blockPoweredRedstoneLantern, BlockPoweredRedstoneLantern.name);
-		//GameRegistry.registerBlock(blockBorderlessGlass, BlockBorderlessGlass.name);
+		GameRegistry.registerBlock(temperedObsidian, BlockTemperedObsidian.name);
+		GameRegistry.registerBlock(cleanGlass, BlockCleanGlass.name);
+		GameRegistry.registerBlock(cleanGlassPane, BlockCleanGlassPane.name);
+		GameRegistry.registerBlock(cleanGlassTempered, BlockCleanGlass.name_tempered);
+		GameRegistry.registerBlock(cleanGlassPaneTempered, BlockCleanGlassPane.name_tempered);
 		
 		// Register Slabs
 		GameRegistry.registerBlock(blockSlabGranite, ItemBlockSlabGranite.class, BlockSlabGraniteHalf.name, 
@@ -124,8 +115,16 @@ public class BlockRegistry extends CommonRegistry {
 		// Register block renders
 		addRender(blockCharcoal, BlockCharcoal.name);
 		addRender(blockPoweredRedstoneLantern, BlockPoweredRedstoneLantern.name);
+		addRender(temperedObsidian, BlockTemperedObsidian.name);
+		addRender(cleanGlass, BlockCleanGlass.name);
+		addRender(cleanGlassPane, BlockCleanGlassPane.name);
+		addRender(cleanGlassTempered, BlockCleanGlass.name_tempered);
+		addRender(cleanGlassPaneTempered, BlockCleanGlassPane.name_tempered);
+		
 		addRender(wirelessChest, BlockWirelessChest.name);
 		addRender(refinedFurnace, BlockRefinedFurnace.name);
+		
+		
 		addRender(blockSlabGranite, BlockSlabGraniteHalf.name);
 		addRender(blockSlabDiorite, BlockSlabDioriteHalf.name);
 		addRender(blockSlabAndesite, BlockSlabAndesiteHalf.name);

@@ -53,11 +53,11 @@ public class GuiRefinedFurnace extends GuiContainer {
 	final int FLAME_HEIGHT = 14;
 	final int FLAME_X_SPACING = 18;
 
-	@SuppressWarnings("static-access")
 	@Override
 	protected void drawGuiContainerBackgroundLayer(float partialTicks, int x, int y) {
 		// Bind the image texture
 		Minecraft.getMinecraft().getTextureManager().bindTexture(texture);
+			
 		// Draw the image
 		GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
 		drawTexturedModalRect(guiLeft, guiTop, 0, 0, xSize, ySize);
@@ -66,15 +66,17 @@ public class GuiRefinedFurnace extends GuiContainer {
 		double cookProgress = tileEntity.fractionOfCookTimeComplete();
 		// draw the cook progress bar
 		drawTexturedModalRect(guiLeft + COOK_BAR_XPOS, guiTop + COOK_BAR_YPOS, COOK_BAR_ICON_U, COOK_BAR_ICON_V,
-						              (int)(cookProgress * COOK_BAR_WIDTH), COOK_BAR_HEIGHT);
+		              (int)(cookProgress * COOK_BAR_WIDTH), COOK_BAR_HEIGHT);
 
 		// draw the fuel remaining bar for each fuel slot flame
-		for (int i = 0; i < tileEntity.FUEL_SLOTS_COUNT; ++i) {
-			double burnRemaining = tileEntity.fractionOfFuelRemaining(i);
-			int yOffset = (int)((1.0 - burnRemaining) * FLAME_HEIGHT);
-			drawTexturedModalRect(guiLeft + FLAME_XPOS + FLAME_X_SPACING * i, guiTop + FLAME_YPOS + yOffset,
-														FLAME_ICON_U, FLAME_ICON_V + yOffset, FLAME_WIDTH, FLAME_HEIGHT - yOffset);
-		}
+		double burnRemaining = tileEntity.fractionOfFuelRemaining();
+		int yOffset = (int)((1.0 - burnRemaining) * FLAME_HEIGHT);
+		if (tileEntity.hasLava())
+			drawTexturedModalRect(guiLeft + FLAME_XPOS, guiTop + FLAME_YPOS + yOffset,
+							FLAME_ICON_U + 14, FLAME_ICON_V + yOffset, FLAME_WIDTH, FLAME_HEIGHT - yOffset);
+		else
+			drawTexturedModalRect(guiLeft + FLAME_XPOS, guiTop + FLAME_YPOS + yOffset,
+					FLAME_ICON_U, FLAME_ICON_V + yOffset, FLAME_WIDTH, FLAME_HEIGHT - yOffset);
 	}
 
 	@Override
@@ -95,12 +97,10 @@ public class GuiRefinedFurnace extends GuiContainer {
 		}
 
 		// If the mouse is over one of the burn time indicator add the burn time indicator hovering text
-		for (int i = 0; i < EntityRefinedFurnace.FUEL_SLOTS_COUNT; ++i) {
-			if (isInRect(guiLeft + FLAME_XPOS + FLAME_X_SPACING * i, guiTop + FLAME_YPOS, FLAME_WIDTH, FLAME_HEIGHT, mouseX, mouseY)) {
+			if (isInRect(guiLeft + FLAME_XPOS, guiTop + FLAME_YPOS, FLAME_WIDTH, FLAME_HEIGHT, mouseX, mouseY)) {
 				hoveringText.add("Fuel Time:");
-				hoveringText.add(tileEntity.secondsOfFuelRemaining(i) + "s");
+				hoveringText.add(tileEntity.secondsOfFuelRemaining() + "s");
 			}
-		}
 		// If hoveringText is not empty draw the hovering text
 		if (!hoveringText.isEmpty()){
 			drawHoveringText(hoveringText, mouseX - guiLeft, mouseY - guiTop, fontRendererObj);

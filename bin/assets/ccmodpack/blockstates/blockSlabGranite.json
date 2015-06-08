@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "half=bottom,variant=false": { "model": "ccmodpack:blockSlabGranite" },
+        "half=top,variant=false": { "model": "ccmodpack:blockSlabGranite_top" },
+        "half=bottom,variant=true": { "model": "ccmodpack:blockSlabGranite" },
+        "half=top,variant=true": { "model": "ccmodpack:blockSlabGranite_top" }
+    }
+}

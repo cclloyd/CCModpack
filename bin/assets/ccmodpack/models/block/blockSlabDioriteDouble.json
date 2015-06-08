@@ -1,0 +1,11 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "down": "ccmodpack:blocks/stone_diorite_smooth",
+        "up": "ccmodpack:blocks/stone_diorite_smooth",
+        "east": "ccmodpack:blocks/blockSlabDiorite",
+        "north": "ccmodpack:blocks/blockSlabDiorite",
+        "south": "ccmodpack:blocks/blockSlabDiorite",
+        "west": "ccmodpack:blocks/blockSlabDiorite"
+    }
+}

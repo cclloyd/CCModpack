@@ -1,5 +1,8 @@
 package com.cclloyd.ccmodpack;
 
+import net.minecraft.init.Blocks;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -15,7 +18,6 @@ import com.cclloyd.ccmodpack.registry.Recipes;
 public class CommonProxy {
 	
 	public static Configuration config;
-    public static CreativeTabCCModpack creativeTab;
 
     
     //private FMLControlledNamespacedRegistry<Item> iItemRegistry;
@@ -60,16 +62,16 @@ public class CommonProxy {
 	
 	
 	public void init(FMLInitializationEvent event) {
-		creativeTab = new CreativeTabCCModpack("ccmodpack");
-    	
+		
     	BlockRegistry.registerBlocks();
     	BlockRegistry.registerTileEntities();
     	
     	Recipes.addRecipes();
     	Recipes.addSmelting();
-    	
+    	Recipes.addFurnaceRecipes();
     	ItemRegistry.registerTools();
     	
+    	//FurnaceRecipes.addSmeltingRecipeForBlock(Blocks.glass, new ItemStack(BlockRegistry.cleanGlass, 1), .2F);
 	}
 	
 	
